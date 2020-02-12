@@ -4,7 +4,7 @@
 
 ## 1. Setup Git configuration on your PC
 
-Use `$ git config --global user.name “[sername]”` to set the name you want attached to your commit transactions.
+Use `$ git config --global user.name “[username]”` to set the name you want attached to your commit transactions.
 
 Use `$ git config --global user.email "[valid Github account email]"` to set the email you want attached to your commit transactions.
 
