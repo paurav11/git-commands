@@ -4,15 +4,15 @@
 
 ## 1. Setup Git configuration on your PC
 
-Use `$ git config --global user.name “[username]”` to set the name you want attached to your commit transactions.
+Use `$ git config --global user.name "[enter-your-github-username]"` to set the name you want to associate with your commits.
 
-Use `$ git config --global user.email "[valid Github account email]"` to set the email you want attached to your commit transactions.
+Use `$ git config --global user.email "[enter-your-github-account-email]"` to set the email you want to associate with your commits.
 
 Use `$ git config --global color.ui auto` to enable helpful colorization of command line output.
 
-Use `$ git config --global init.defaultBranch "[enter-branch-name]"` to change the name of the default branch whenever a repository is initialized.
+Use `$ git config --global init.defaultBranch [enter-branch-name]` to change the name of the default branch whenever a repository is initialized.
 
-Use `$ git config --global alias."[enter-alias-name]" "[command-name]"` to change the name of a git command and make it short as per your requirements.
+Use `$ git config --global alias.[enter-alias-name] [command-name]` to change the name of a git command and make it short as per your requirements.
 
 Use `$ git config --list` to see the current Git configuration list.
 
@@ -20,22 +20,23 @@ Use `$ git config --list` to see the current Git configuration list.
 
 Use `$ git init` to turn an existing directory into a git repository.
 
-Use `$ git clone [HTTPS URL/SSH Key]` to Clone (download) a repository that already exists on
-GitHub, including all of the files, branches, and commits.
+Use `$ git clone [enter-HTTPS URL/SSH Key]` to clone (download) a repository that already exists on GitHub, including all of the files, branches, and commits.
 
 ## 3. Working with Git staging area
 
-Use `$ git status` to show modified files in working directory, staged for your next commit.
+Use `$ git status` to show new or modified files in working directory that needs to be staged for your next commit.
 
-Use `$ git add [file]` to add a file as it looks now to your next commit (stage) & use `$ git add --all`/`$ git add .` to add all files to the staging area.
+se `$ git status -s` to show a short status.
+
+Use `$ git add [file]` to add a specific file to the staging area & use `$ git add --all`/`$ git add .` to add all the files to the staging area.
 
 Use `$ git reset [file]` to unstage a file while retaining the changes in working directory.
 
-Use `$ git diff` to show difference of what is changed but not staged.
+Use `$ git diff` to show the difference of what is changed but not staged.
 
 Use `$ git diff --staged` to show difference of what is staged but not yet committed.
 
-Use `$ git commit -m "[descriptive message]"` to commit your staged content as a new commit snapshot.
+Use `$ git commit -m "[brief message]"` to commit your staged files as a new commit entry.
 
 ## 4. Temporary commits
 
