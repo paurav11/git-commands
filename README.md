@@ -10,6 +10,10 @@ Use `$ git config --global user.email "[valid Github account email]"` to set the
 
 Use `$ git config --global color.ui auto` to enable helpful colorization of command line output.
 
+Use `$ git config --global init.defaultBranch "[enter-branch-name]"` to change the name of the default branch whenever a repository is initialized.
+
+Use `$ git config --global alias."[enter-alias-name]" "[command-name]"` to change the name of a git command and make it short as per your requirements.
+
 Use `$ git config --list` to see the current Git configuration list.
 
 ## 2. Create a Git repository or Clone an existing repository
