@@ -22,6 +22,8 @@ Use `$ git init` to turn an existing directory into a git repository.
 
 Use `$ git clone [enter-HTTPS URL/SSH Key]` to clone (download) a repository that already exists on GitHub, including all of the files, branches, and commits.
 
+Use `$ git clone [enter-HTTPS URL/SSH Key] [enter-folder-name]` to clone (download) a repository including all of the files, branches, and commits to a folder that is explicitly given a name.
+
 ## 3. Working with Git staging area
 
 Use `$ git status` to show new or modified files in working directory that needs to be staged for your next commit.
@@ -40,9 +42,9 @@ Use `$ git commit -m "[brief message]"` to commit your staged file(s) as a new c
 
 Use `$ git commit -a -m "[brief message]"` to skip the staging area and directly commit your file(s).
 
-Use `$ git rm [file-name/folder-name]` to remove the file from your working directory so you don’t see it as an untracked file the next time around.
+Use `$ git rm [file-name/folder-name]` to remove the file/folder from your working directory so you don’t see it as an untracked file the next time around.
 
-Use `$ git rm --cached [file-name/folder-name]` to keep the file in your working tree but remove it from your staging area.
+Use `$ git rm --cached [file-name/folder-name]` to keep the file/folder in your working tree but remove it from your staging area.
 
 Use `$ git mv [from_file-name] [to_file-name]` to rename an existing file name to some other name.
 
@@ -76,6 +78,10 @@ Use `$ git merge [branch-name]` to merge a specified branch with the currently a
 
 Use `$ git log` to show the commit history for the currently active branch.
 
+Use `$ git log --pretty=oneline` to print each commit on a single line, which is useful if you’re looking at a lot of commits.
+
+Use `$ git log --since='number'.'period'` to print all the commits since the mentioned period of time i.e. {days, weeks, years}, e.g. `$ git log --since=2.weeks` prints all the commits since last 2 weeks.
+
 Use `$ git log branchB..branchA` to show the commits on branchA that are not on branchB.
 
 Use `$ git log --follow [file]` to show the commits that changed file, even across renames.
@@ -96,7 +102,7 @@ Use `$ git remote remove [alias]` to remove Git remote.
 
 Use `$ git fetch [alias]` to fetch down all the branches from the mentioned Git remote.
 
-Use `$ git merge [alias]/[branch-name]` to merge a remote branch into your current branch to bring it up to date.
+Use `$ git merge [alias]/[branch-name]` to merge a remote branch into your current branch to make it up to date.
 
 Use `$ git push [alias] [branch-name]` to upload local branch commits to the remote repository branch.
 
